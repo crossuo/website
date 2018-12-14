@@ -10,4 +10,4 @@ Currently the only closed source component, Orion Assistant is a full featured g
 
 Making use of the powerful Qt scripting, a Javascript based scripting engine, Orion Assistant is extremely flexible enabling complex actions to be easily automated.
 
-Check the scripting [documentation](https://docs.orionuo.com/scripting/scripting.html) for more details.
+Check the scripting [documentation](http://docs.orionuo.com/scripting/scripting.html) for more details.
