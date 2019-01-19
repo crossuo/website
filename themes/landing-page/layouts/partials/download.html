@@ -1,18 +1,18 @@
 <!-- Download Section -->
 <section id="download" class="container content-section text-center">
-{{ range where .Data.Pages "Section" "download" | first 1 }}
+    {{ range where .Data.Pages "Section" "download" | first 1 }}
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-lg-10 col-lg-offset-1">
             <br/>
             <br/>
             <h2>{{ .Title }}</h2>
             <br/>
 
-
-
-            <div class="Rtable Rtable--3cols Rtable--collapse">
-                <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Windows</h3></div>
-                <div style="order:1;" class="Rtable-cell">{{ .Params.WindowsDesc }}</div>
+            <div class="Rtable Rtable--4cols Rtable--collapse">
+                <div style="order:0;" class="Rtable-cell Rtable-cell--head">
+                    <h3>Windows</h3>
+                </div>
+                <div style="order:1;" class="Rtable-cell">Windows Installer<br/>Windows 7, 8 or 10 (64bits)</div>
                 <div style="order:2;" class="Rtable-cell Rtable-cell--foot">
                     <div class="download">
                         <a href="{{ .Params.Windows }}">
@@ -21,20 +21,30 @@
                     </div>
                 </div>
 
+                <div style="order:0;">&nbsp;&nbsp;</div>
+                <div style="order:1;">&nbsp;&nbsp;</div>
+                <div style="order:2;">&nbsp;&nbsp;</div>
 
-                <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Linux</h3></div>
-                <div style="order:1;" class="Rtable-cell">{{ .Params.LinuxDesc }}</div>
+                <div style="order:0;" class="Rtable-cell Rtable-cell--head">
+                    <h3>Linux</h3>
+                </div>
+                <div style="order:1;" class="Rtable-cell">Ubuntu 16.04 LTS (64bits) or newer;<br/>or<br/><a href="{{ .Params.Linux2 }}">Manjaro Linux 18.02</a><br/><br/>Requirements:<br/>Distribution provided SDL2, OpenGL, GLEW and Qt5</div>
                 <div style="order:2;" class="Rtable-cell Rtable-cell--foot">
                     <div class="download">
                         <a href="{{ .Params.Linux }}">
-                            Download
+                            Download (Ubuntu)
                         </a>
                     </div>
                 </div>
 
+                <div style="order:0;">&nbsp;&nbsp;</div>
+                <div style="order:1;">&nbsp;&nbsp;</div>
+                <div style="order:2;">&nbsp;&nbsp;</div>
 
-                <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>MacOSX</h3></div>
-                <div style="order:1;" class="Rtable-cell">{{ .Params.MacOSXDesc }}</div>
+                <div style="order:0;" class="Rtable-cell Rtable-cell--head">
+                    <h3>MacOSX</h3>
+                </div>
+                <div style="order:1;" class="Rtable-cell">MacOSX 10.13 or newer<br/><br/>Requirements:<br/>SDL2, OpenGL and GLEW</div>
                 <div style="order:2;" class="Rtable-cell Rtable-cell--foot">
                     <div class="download">
                         <a href="{{ .Params.MacOSX }}">
@@ -44,12 +54,10 @@
                 </div>
             </div>
 
-
             {{ .Content }}
 
             <br/>
         </div>
     </div>
-{{ end }}
+    {{ end }}
 </section>
-    

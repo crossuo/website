@@ -2,28 +2,50 @@
 title: Download
 date: 2018-11-25T00:00:00
 draft: false
-windows: https://github.com/OrionUO/OrionLauncher/releases/download/1.1.5.1/Orion.Launcher_1.1.5.1.exe
-windowsdesc: Windows Installer
-linux: https://github.com/OrionUO/OrionUO/archive/master.zip
-linuxdesc: Source code, requires CMake and SDL2
-macosx: https://github.com/OrionUO/OrionUO/archive/master.zip
-macosxdesc: Source code, requires CMake and SDL2
+windows: https://github.com/OrionUO/OrionLauncher/releases/download/1.30.0/OOrionLauncher-1.30.0-win64.zip
+linux: https://github.com/OrionUO/OrionLauncher/releases/download/1.30.0/orionlauncher-1.30.0-ubuntu-16.04-Qt5.tar.gz
+linux2: https://github.com/OrionUO/OrionLauncher/releases/download/1.30.0/orionlauncher-1.30.0-manjaro-18.02-Qt5.tar.gz
+macosx: https://github.com/OrionUO/OrionLauncher/releases/download/1.30.0/OrionLauncher-1.30.0-macOS.zip
 ---
 
 RELEASE NOTES
 
 ```
-201?-??-??
+2019-01-19
 
-- Beta release for multiplatform support
+Finally we're here! This release marks the first Orion release with real native multiplatform support, but more than anything, this marks the first time since Ultima Online launch that we have a functional native client for Linux and MacOSX.
+
+To get here, we invested a lot of time and did a lot of changes to the codebase that did not reflect in actual bug fixes, as this was much required so we will be able to continue going forward bringing back life to the project since it was abandonned.
+
+Next, we hope to slowly start improving the client, but more than anything we need your help. We're looking for any developers with any experience willing to learn and so we're willing do help you learn.
+
+Thank you and Enjoy!
+
+Orion Launcher 1.30.0, OrionUO Client v0.1.30.0 and Orion Assistant 2.0.30.0
+
+- New: Ubuntu 16.04+ 64bits support (Client, Launcher and Assistant)
+- New: Manjaro Linux 18.02+ 64bits support (Client, Launcher and Assistant)
+- New: macOS High Sierra 10.13+ support (Client and Launcher)
+- Change: OrionAssist is now in the same folder as OrionUO (no more OA folder)
+- Change: Orion.cuo is deprecated and unsupported, configure in OrionUO.cfg
+- Change: Orion.dll is deprecated and unsupported
+- Change: LoginServer, ClientVersion, Crypt and ClientType entries in OrionUO.cfg
+- Change: Cryptografy keys are derived automatically from client version if Crypt=yes
+- Change: Client now uses SDL2, Win32 API is deprecated and unsupported
+- Bugfix: #91 Client crashing on reconnect while character still in game
+- BugFix: Issue with POL server where it wasn't possible to pass through a NPC
+- Bugfix: Avoid crash on mobiles that flee combat by running away
+- Bugfix: OA that was not always able to open doors
+- New: Option to disable activating macros while in console mode (emote, whisper, party, etc.)
 
 ```
 
-OLD CLIENT RELEASE NOTES
+<details>
+<summary>Archived Release Notes (Click to open)</summary>
 ```
 2018-09-06
 
-OrionUO Client v1.10.0.1
+OrionUO Client v0.1.10.1
 - Bugfix: Fix character selection screen with empty slots
 - Bugfix: Fix character creation issue with POL server for client protocol 7.013.0
 - Bugfix: Fix OrionAssistant so it receives lists for skills and spells
@@ -32,7 +54,7 @@ OrionUO Client v1.10.0.1
 
 2018-09-04
 
-OrionUO Client v1.10.0.0
+OrionUO Client v0.1.10.0
 - Add PVPcaller Highlighting framework.
 - Macro name bugfix
 - Fix bug with not saving config
@@ -436,3 +458,4 @@ OrionUO First version
 - Changed some default configuration values.
 
 ```
+</details>
