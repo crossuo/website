@@ -15,7 +15,7 @@ RELEASE NOTES
 
 Finally we're here! This release marks the first Orion release with real native multiplatform support, but more than anything, this marks the first time since Ultima Online launch that we have a functional native client for Linux and MacOSX.
 
-To get here, we invested a lot of time and did a lot of changes to the codebase that did not reflect in actual bug fixes, as this was much required so we will be able to continue going forward bringing back life to the project since it was abandonned.
+To get here, we invested a lot of time and did a lot of changes to the codebase that did not reflect in actual bug fixes, as this was much required so we will be able to continue going forward bringing life back to the project since it was abandoned.
 
 Next, we hope to slowly start improving the client, but more than anything we need your help. We're looking for any developers with any experience willing to learn and so we're willing do help you learn.
 
@@ -30,7 +30,7 @@ Orion Launcher 1.30.0, OrionUO Client v0.1.30.0 and Orion Assistant 2.0.30.0
 - Change: Orion.cuo is deprecated and unsupported, configure in OrionUO.cfg
 - Change: Orion.dll is deprecated and unsupported
 - Change: LoginServer, ClientVersion, Crypt and ClientType entries in OrionUO.cfg
-- Change: Cryptografy keys are derived automatically from client version if Crypt=yes
+- Change: Cryptography keys are derived automatically from client version if Crypt=yes
 - Change: Client now uses SDL2, Win32 API is deprecated and unsupported
 - Bugfix: #91 Client crashing on reconnect while character still in game
 - BugFix: Issue with POL server where it wasn't possible to pass through a NPC
