@@ -5,7 +5,7 @@ draft: false
 windows: https://github.com/OrionUO/OrionLauncher/releases/download/v1.30.0/OrionLauncher-1.30.1-win64.zip
 linux: https://github.com/OrionUO/OrionLauncher/releases/download/v1.30.0/orionlauncher-1.30.0-ubuntu-16.04-Qt5.tar.gz
 linux2: https://github.com/OrionUO/OrionLauncher/releases/download/v1.30.0/orionlauncher-1.30.0-manjaro-18.02-Qt5.tar.gz
-macosx: https://github.com/OrionUO/OrionLauncher/releases/download/v1.30.0/OrionLauncher-1.30.0-macOS.zip
+macosx: https://github.com/OrionUO/OrionLauncher/releases/download/v1.30.0/OrionLauncher-1.30.0-macOS.dmg
 ---
 
 RELEASE NOTES
