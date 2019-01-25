@@ -21,13 +21,12 @@
                     <a class="page-scroll" href="#features">Features</a>
                 </li>
                 {{ range where .Data.Pages "Section" "download" | first 1 }}
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                {{ end }}
-                {{ if isset .Site.Params "social" }}
                 <li>
-                    <a class="page-scroll" href="http://docs.orionuo.com/" target="_blank">Docs</a>
+                    <a class="page-scroll" href="#download">Download</a>
+                </li>
+                {{ end }} {{ if isset .Site.Params "social" }}
+                <li>
+                    <a class="page-scroll" href="http://docs.crossuo.com/" target="_blank">Docs</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -41,29 +40,28 @@
 </nav>
 
 <section id="intro">
-	<!-- Header -->
-	<div class="intro-header">
+    <!-- Header -->
+    <div class="intro-header">
 
-	    <div class="container">
+        <div class="container">
 
-		<div class="row">
-		    <div class="col-lg-12">
-			<div class="intro-message">
-			    <h1>{{ .Site.Title }}</h1>
-			    <h3>{{ .Site.Params.description }}</h3>
-			    <hr class="intro-divider">
-			    {{ if isset .Site.Params "social" }}
-			    <ul class="list-inline intro-social-buttons">
-				        {{ partial "social.html" . }}
-			    </ul>
-			    {{ end }}
-			</div>
-		    </div>
-		</div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>{{ .Site.Title }}</h1>
+                        <h3>{{ .Site.Params.description }}</h3>
+                        <hr class="intro-divider"> {{ if isset .Site.Params "social" }}
+                        <ul class="list-inline intro-social-buttons">
+                            {{ partial "social.html" . }}
+                        </ul>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
 
-	    </div>
-	    <!-- /.container -->
+        </div>
+        <!-- /.container -->
 
-	</div>
-	<!-- /.intro-header -->
+    </div>
+    <!-- /.intro-header -->
 </section>
