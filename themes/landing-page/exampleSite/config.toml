@@ -1,4 +1,4 @@
-baseurl = "http://yourdomain.com"
+baseurl = "https://yourdomain.com"
 languageCode = "en-us"
 title = "WidgetCo Inc"
 canonifyUrls = "true"
@@ -22,4 +22,4 @@ canonifyUrls = "true"
 [[params.social]]
     title = "linkedin"
     icon = "linkedin"
-    url = "http://linkedin.com/in/yourusername"
+    url = "https://linkedin.com/in/yourusername"
